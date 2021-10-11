@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            color: rgb(0, 0, 0);
+            background-color: rgb(153, 255, 238);           
+            
+            font: 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Primeiros passos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>   
+    <div id="msg">Clique me mim</div>
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[0]
+        /*
+        var d = window.document.getElementById('msg')
+            d.innerText = 'Mudei a frase'
+            d.style.color = 'green'
+            */
+
+           /*
+        window.document.getElementsByClassName('msg')[0].innerHTML= 'Olá'
+        */
+        var d = document.querySelector('div#msg')
+        d.style.color = 'blue';
+       // Toda ID é representado por #, se for CLASS é por '.'(ponto)
+    </script>
+</body>
+</html>

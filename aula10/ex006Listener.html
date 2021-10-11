@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#area{
+            font-size: 20px;
+            background:  rgb(147, 147, 248);
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area"> 
+    <!-- Colocar na tag div
+        onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()" -->
+        interagindo......
+    </div>
+
+    <script>
+        //Ao inves de colocar os metodos na tag DIV, posso usar um addEventListener
+        var a = window.document.getElementById('area');
+        a.addEventListener('click', clicar);
+        a.addEventListener('mouseenter', entrar);
+        a.addEventListener('mouseout', sair);
+        function clicar(){
+            a.innerText = 'CLICOU';
+            a.style.background = 'red';
+        }
+        function entrar(){
+            a.innerText = 'ENTRAR';
+        }
+        function sair(){
+            a.innerText = 'SAIR'
+            a.style.background = 'green'
+        }
+    </script>
+    
+</body>
+</html>

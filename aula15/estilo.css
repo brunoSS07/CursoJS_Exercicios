@@ -1,0 +1,27 @@
+body{
+    padding: 20px;
+    background: rgb(168, 252, 255);
+}
+
+header{
+    text-align: center;
+}
+footer{
+    text-align: center;
+}
+
+section{
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 1px 3px 6px rgb(24, 23, 23);
+    background: white;
+    border-radius: 15px;
+}
+div{
+    margin: 10px;
+}
+
+select{
+    padding: 5px;
+}

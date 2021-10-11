@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>De que País Você é:</h1>
+    <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="verificador" onclick="verificador()">
+    <div id="res">
+
+    </div>
+    <script>
+  
+        function verificador(){
+            var pais = document.getElementById('txtpais').value;
+            var resposta = document.getElementById("res");
+            resposta.innerHTML = `<p>Seu país de origem é: ${pais}.</p>`
+
+            if(pais == 'Brasil'){
+                resposta.innerHTML += `<p>Você é Brasileiro.</p>`
+            }else{
+                resposta.innerHTML += `<p>Você é Estrangeiro.</p>`
+            }
+        }
+
+    </script>
+    
+</body>
+</html>
